@@ -183,13 +183,21 @@ main {
     /*Creates grid of divs over background image*/
     border: 2px solid white;
 }
-
+foote
 #times h3 {
     /*Overrides general heading color*/
     color: #fafafa;
 }
 
+/*Gallery page styles*/
+#photos {
+    line-height: 0;
+}
 
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
 
 /*Footer*/
 #social-networks {
