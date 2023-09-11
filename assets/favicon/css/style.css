@@ -94,6 +94,8 @@ main {
     /*Makes main take up surplus space, pushing footer down*/
     flex: 1 0 auto;
     margin-top: 47px;
+    display: flex;
+    flex-direction: column;
 }
 
 #hero {
@@ -183,8 +185,8 @@ main {
     /*Creates grid of divs over background image*/
     border: 2px solid white;
 }
-foote
-#times h3 {
+
+foote #times h3 {
     /*Overrides general heading color*/
     color: #fafafa;
 }
@@ -197,6 +199,51 @@ foote
 #photos img {
     width: 100%;
     line-height: 1em;
+}
+
+/*Sign-up section*/
+#signup {
+    background-size: cover;
+    background-position: 75%;
+    background-image: url(../images/signup-image.webp);
+    flex-grow: 1;
+    padding: 20px 10% 0 10%;
+}
+
+#signup h2 {
+    color: #fafafa;
+}
+
+#signup-form {
+    color: #fff;
+    background-color: rgba(60, 60, 60, .6);
+    padding: 30px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    height: 25px;
+    width: 100%;
+    padding: 0 5px;
+    margin: 5px 0 20px 0;
+}
+
+#radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.join-button {
+    padding: 15px 32px;
+    margin: 20px;
+    border-radius: 2px;
+    background-color: #454b1b;
+    color: #fafafa;
+    font-size: 100%;
 }
 
 /*Footer*/
@@ -287,6 +334,29 @@ foote
     #photos {
         column-count: 3;
     }
+
+    /* Form */
+    #signup {
+        background-position: center;
+        position: relative;
+    }
+
+    #signup-form {
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 150px;
+    }
+
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
+
 }
 
 
@@ -296,10 +366,32 @@ foote
         border-bottom: 1px solid #3a3a3a;
     }
 
-/*Gallery*/
+    /*Gallery*/
     #photos {
         column-count: 4;
     }
+
+        /* Form */
+        #signup {
+            background-position: center;
+            position: relative;
+        }
+    
+        #signup-form {
+            max-width: 400px;
+            position: absolute;
+            left: 10%;
+            top: 150px;
+        }
+    
+        .text-input:hover {
+            border-color: #f16c6b;
+        }
+    
+        .join-button:hover {
+            background-color: #fafafa;
+            color: #454b1b;
+        }
 }
 
 /*Media queries for laptops and larger (1200px and up)*/
